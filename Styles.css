@@ -1,0 +1,165 @@
+body {
+    color: white;
+    background-color: rgb(26, 18, 55);
+    font-family: 'Gotham', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background-image: url('img/van gog.jpg');
+    background-size: cover; 
+    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home h2 {
+    font-family: serif;
+    font-weight: 300;
+    font-size: 50px; 
+}
+
+.bar {
+    justify-content: center;
+    display: flex;
+    background-color: rgb(31, 24, 65);
+    color: white;
+}
+
+.bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bar ul a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+.bar ul a:hover {
+    border-radius: 30px;
+    background-color: rgb(53, 51, 63);
+}
+
+.konten {
+    background-color: rgb(28, 27, 32);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.konten h2 {
+    font-size: 1.5em; 
+    font-weight: 300;
+    padding: 10px 0;
+    background-color: rgb(31, 24, 65);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.konten p {
+    font-size: 1.1em; 
+    line-height: 1.6;
+    margin: 20px;
+    flex: 1;
+}
+
+.konten img {
+    max-width: 400px;
+    margin: 20px;
+}
+
+.koleksi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    background-color: rgb(28, 27, 32); 
+    padding: 20px;
+}
+.koleksi h2{
+    font-size: large;
+    font-weight: 300;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.koleksi img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; 
+}
+
+.koleksi_judul h2 {
+    font-size: 1.5em; 
+    font-weight: 300;
+    padding: 10px 0;
+    background-color: rgb(31, 24, 65);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.container {
+    width: 20%; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: rgb(31, 24, 65); 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.container form {
+    text-align: center; 
+}
+
+.container h2 {
+    font-size: 20px; 
+    font-weight: 300; 
+    padding: 10px ;
+    background-color: rgb(53, 51, 63); 
+    width: 100%;
+    text-align: center; 
+    color: white;
+}
+
+form label {
+    color: white; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+form input {
+    width: 90%; 
+    padding: 8px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%; 
+    padding: 10px;
+    background-color: #5c61b8; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+form button:hover {
+    background-color: #544cae; 
+}
+

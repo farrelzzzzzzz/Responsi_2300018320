@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Nusantara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bar">
+        <ul><a href="#ticketForm">Pesan Tiket</a></ul>
+        <ul><a href="#koleksi">Koleksi Karya</a></ul>
+        <ul><a href="#tentang">Tentang</a></ul>
+    </div>
+
+    <div class="home"><h2>Museum Nusantara</h2></div>
+    
+    <div class="konten">
+        <h2 id="tentang">Tentang</h2>
+        <p>Bu Rina, sebagai kurator di Museum Nusantara, memiliki tanggung jawab besar dalam memamerkan berbagai 
+            artefak dan karya seni yang mewakili kekayaan budaya Indonesia. Melalui perannya yang berdedikasi, 
+            museum ini menjadi tempat yang penting untuk mempelajari sejarah, seni, dan budaya Nusantara, memastikan 
+            bahwa warisan budaya ini terjaga dan dipahami oleh generasi masa kini dan masa depan.</p>
+        <img src="img/mona.jpeg" alt="Mona Lisa" height="200px">
+        <img src="img/mona.jpeg" alt="Mona Lisa" height="300px">
+    </div>
+
+    <div class="koleksi_judul"><h2 id="koleksi">Koleksi Karya</h2></div>
+    
+    <div class="koleksi"> 
+        <a href="https://id.wikipedia.org/wiki/Gadis_dengan_Anting-Anting_Mutiara"><img src="img/blue.jpg" alt="Gadis dengan Anting-Anting Mutiara"></a>
+        <a href="https://id.m.wikipedia.org/wiki/Berkas:Adolf_Hitler_Der_Alte_Hof.jpg"><img src="img/hitler.jpg" alt="Adolf Hitler"></a>
+        <a href="https://id.wikipedia.org/wiki/Berkas:Tsunami_by_hokusai_19th_century.jpg"><img src="img/tsunami.jpg" alt="Tsunami by Hokusai"></a>
+        <h2>Johannes Vermeer</h2>
+        <h2>Adolf Hitler</h2>
+        <h2>Chinese</h2>
+    </div>
+
+    <div class="koleksi_judul"><h2 id="koleksi">Pemesanan Tiket</h2></div>
+
+    <div class="container">
+        <form action="Proses.php" method="POST" id="ticketForm" onsubmit="return validasiform();">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="ticket">Jumlah Tiket:</label>
+            <input type="number" id="ticket" name="ticket" required>
+
+            <button type="submit">Pesan Tiket</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="validasi.js"></script>
+</body>
+</html>
